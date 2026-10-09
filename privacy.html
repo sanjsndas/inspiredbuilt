@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · Inspired Built Forms</title>
+
+  <!-- SEO essentials -->
+  <meta name="description" content="Privacy Policy for Inspired Built Forms — how we collect, use, and protect your personal information. Editorial & advertising inquiries welcome.">
+  <meta name="author" content="Inspired Built Forms Editorial">
+  <link rel="canonical" href="https://inspiredbuiltforms.com/privacy.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy · Inspired Built Forms">
+  <meta property="og:description" content="How Inspired Built Forms collects, uses, and safeguards your data. Read our full privacy policy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://inspiredbuiltforms.com/privacy.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <meta property="og:site_name" content="Inspired Built Forms">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- RESET & BASE (same as home/contact) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #fcfaf7;
+      --paper-warm: #f5f2ee;
+      --border-light: #e0dbd4;
+      --border-subtle: #ece7e0;
+      --accent: #9b7b5e;
+      --accent-muted: #b9a28c;
+      --muted-text: #6b625a;
+      --card-bg: #ffffff;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.04);
+      --radius-sm: 2px;
+      --radius-md: 4px;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease, opacity 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.75rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+
+    /* ---------- UTILITIES ---------- */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container-narrow {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 64px 0;
+    }
+
+    .section-header {
+      margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .section-header .subhead {
+      color: var(--muted-text);
+      font-size: 1rem;
+      font-weight: 300;
+      max-width: 600px;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border-subtle);
+      margin: 32px 0;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border-light);
+      background: var(--paper);
+      padding: 20px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-weight: 400;
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 24px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      padding: 4px 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--paper-warm);
+      border: 1px solid var(--border-light);
+      padding: 6px 14px;
+      border-radius: 40px;
+    }
+
+    .search-wrap input {
+      border: none;
+      background: transparent;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      padding: 4px 0;
+      outline: none;
+      width: 160px;
+      color: var(--ink);
+    }
+
+    .search-wrap input::placeholder {
+      color: var(--muted-text);
+      font-weight: 300;
+    }
+
+    .search-wrap button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--muted-text);
+      font-size: 0.9rem;
+    }
+
+    /* ---------- PRIVACY PAGE SPECIFIC ---------- */
+    .privacy-hero {
+      padding: 48px 0 24px;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .privacy-hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 16px;
+    }
+
+    .privacy-hero p {
+      font-size: 1.1rem;
+      color: var(--muted-text);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .privacy-content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 16px 0 64px;
+    }
+
+    .privacy-content .last-updated {
+      font-size: 0.85rem;
+      color: var(--muted-text);
+      background: var(--paper-warm);
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      border-left: 4px solid var(--accent-muted);
+      margin-bottom: 40px;
+    }
+
+    .privacy-content h2 {
+      font-size: 1.6rem;
+      margin-top: 48px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-content h3 {
+      font-size: 1.2rem;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+    }
+
+    .privacy-content p {
+      margin-bottom: 18px;
+      color: var(--ink-soft);
+      font-size: 0.98rem;
+      line-height: 1.75;
+    }
+
+    .privacy-content ul {
+      list-style: disc;
+      padding-left: 24px;
+      margin-bottom: 20px;
+    }
+
+    .privacy-content ul li {
+      margin-bottom: 8px;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .privacy-content ul li strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .privacy-content a {
+      color: var(--accent);
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease;
+    }
+
+    .privacy-content a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .privacy-content .highlight-box {
+      background: var(--paper-warm);
+      border-left: 4px solid var(--accent-muted);
+      padding: 20px 24px;
+      margin: 24px 0;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+    }
+
+    .privacy-content .highlight-box strong {
+      color: var(--ink);
+    }
+
+    /* ---------- FAQ (same as home/contact) ---------- */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border-light);
+      padding: 24px 0;
+    }
+
+    .faq-item:first-child {
+      border-top: 1px solid var(--border-light);
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 1.1rem;
+      font-family: 'Playfair Display', serif;
+      gap: 16px;
+    }
+
+    .faq-question span {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--accent);
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-question span {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, margin 0.2s ease;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      padding-right: 32px;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+      margin-top: 16px;
+    }
+
+    /* ---------- FOOTER (same as home/contact) ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #b0a89f;
+      padding: 64px 0 32px;
+      margin-top: 80px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-brand .logo {
+      color: #fff;
+      font-size: 1.4rem;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      max-width: 320px;
+      color: #9a938c;
+    }
+
+    .footer-col h5 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #7d766f;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+      font-size: 0.85rem;
+    }
+
+    .footer-col ul a {
+      color: #b0a89f;
+    }
+
+    .footer-col ul a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-top: 28px;
+      font-size: 0.75rem;
+      color: #6b625a;
+    }
+
+    .footer-bottom a {
+      color: #8a837c;
+    }
+
+    .footer-bottom a:hover {
+      color: #fff;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .main-nav ul {
+        gap: 16px;
+        font-size: 0.8rem;
+      }
+      .search-wrap {
+        width: 100%;
+      }
+      .search-wrap input {
+        width: 100%;
+      }
+      .privacy-hero h1 {
+        font-size: 1.9rem;
+      }
+      .privacy-content h2 {
+        font-size: 1.35rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container, .container-narrow {
+        padding: 0 16px;
+      }
+      .privacy-hero h1 {
+        font-size: 1.6rem;
+      }
+      .privacy-content ul {
+        padding-left: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Inspired <span>Built Forms</span></a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search articles">
+        <button aria-label="Submit search" id="searchBtn">⌕</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== PRIVACY HERO ==================== -->
+    <section class="container privacy-hero">
+      <span class="category-tag">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p>Your privacy matters to us. This policy explains what information we collect, how we use it, and the choices you have.</p>
+    </section>
+
+    <!-- ==================== PRIVACY CONTENT ==================== -->
+    <section class="container privacy-content">
+
+      <div class="last-updated">
+        <strong>Last updated:</strong> 1 March 2025
+      </div>
+
+      <p>Inspired Built Forms ("we", "us", or "our") operates the website <a href="https://inspiredbuiltforms.com">inspiredbuiltforms.com</a> (the "Site"). This Privacy Policy describes how we collect, use, and share information about you when you visit or interact with the Site. By using the Site, you agree to the collection and use of information in accordance with this policy.</p>
+
+      <h2>1. Information We Collect</h2>
+      <p>We collect several types of information for various purposes to provide and improve our service to you.</p>
+
+      <h3>Personal Data</h3>
+      <p>While using our Site, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:</p>
+      <ul>
+        <li><strong>Email address</strong> — when you subscribe to our newsletter or contact us.</li>
+        <li><strong>First name and last name</strong> — when you submit a contact form or pitch.</li>
+        <li><strong>Cookies and Usage Data</strong> — as described in the Cookies section below.</li>
+      </ul>
+
+      <h3>Usage Data</h3>
+      <p>We may also collect information on how the Site is accessed and used ("Usage Data"). This may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Site that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers, and other diagnostic data.</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>Inspired Built Forms uses the collected data for various purposes:</p>
+      <ul>
+        <li>To provide and maintain the Site.</li>
+        <li>To notify you about changes to our Site or policies.</li>
+        <li>To allow you to participate in interactive features of our Site when you choose to do so.</li>
+        <li>To provide customer care and support.</li>
+        <li>To gather analysis or valuable information so that we can improve the Site.</li>
+        <li>To monitor the usage of the Site.</li>
+        <li>To detect, prevent, and address technical issues.</li>
+        <li>To send you newsletters, marketing or promotional materials, and other information that may be of interest to you (only if you have opted in).</li>
+      </ul>
+
+      <div class="highlight-box">
+        <strong>Editorial note:</strong> We do not sell, rent, or trade your personal information to third parties for their marketing purposes. Ever.
+      </div>
+
+      <h2>3. Legal Basis for Processing (GDPR)</h2>
+      <p>If you are from the European Economic Area (EEA), our legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific context in which we collect it.</p>
+      <ul>
+        <li><strong>Consent:</strong> You have given us permission to do so (e.g., newsletter subscription).</li>
+        <li><strong>Contract:</strong> The processing is necessary for a contract with you.</li>
+        <li><strong>Legitimate Interests:</strong> The processing is in our legitimate interests and not overridden by your rights.</li>
+        <li><strong>Legal Obligation:</strong> We need to comply with the law.</li>
+      </ul>
+
+      <h2>4. Data Retention</h2>
+      <p>We will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our legal agreements and policies.</p>
+      <p>Usage Data is generally retained for a shorter period, except when this data is used to strengthen the security or to improve the functionality of our Site.</p>
+
+      <h2>5. Transfer of Data</h2>
+      <p>Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country, or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction.</p>
+      <p>If you are located outside the United Kingdom and choose to provide information to us, please note that we transfer the data, including Personal Data, to the United Kingdom and process it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</p>
+
+      <h2>6. Disclosure of Data</h2>
+      <p>We may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
+      <ul>
+        <li>Comply with a legal obligation.</li>
+        <li>Protect and defend the rights or property of Inspired Built Forms.</li>
+        <li>Prevent or investigate possible wrongdoing in connection with the Site.</li>
+        <li>Protect the personal safety of users of the Site or the public.</li>
+        <li>Protect against legal liability.</li>
+      </ul>
+
+      <h2>7. Security of Data</h2>
+      <p>The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+
+      <h2>8. Your Data Protection Rights</h2>
+      <p>If you are a resident of the European Economic Area (EEA) or the United Kingdom, you have certain data protection rights. Inspired Built Forms aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.</p>
+      <ul>
+        <li><strong>The right to access</strong> — You have the right to request copies of your personal data.</li>
+        <li><strong>The right to rectification</strong> — You have the right to request that we correct any information you believe is inaccurate.</li>
+        <li><strong>The right to erasure</strong> — You have the right to request that we erase your personal data, under certain conditions.</li>
+        <li><strong>The right to restrict processing</strong> — You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+        <li><strong>The right to object to processing</strong> — You have the right to object to our processing of your personal data, under certain conditions.</li>
+        <li><strong>The right to data portability</strong> — You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+      </ul>
+      <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at <a href="mailto:editor@inspiredbuiltforms.com">editor@inspiredbuiltforms.com</a>.</p>
+
+      <h2>9. Cookies</h2>
+      <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the website that you visit and are stored on your computer's hard drive.</p>
+      <p>We use cookies and similar tracking technologies to track the activity on our Site and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Site.</p>
+      <p>For more details on the specific cookies we use, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+      <h2>10. Links to Other Sites</h2>
+      <p>Our Site may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
+      <p>We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+
+      <h2>11. Children's Privacy</h2>
+      <p>Our Site does not address anyone under the age of 16 ("Children"). We do not knowingly collect personally identifiable information from anyone under the age of 16. If you are a parent or guardian and you are aware that your child has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.</p>
+
+      <h2>12. Changes to This Privacy Policy</h2>
+      <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top.</p>
+      <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+
+      <h2>13. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us:</p>
+      <ul>
+        <li>By email: <a href="mailto:editor@inspiredbuiltforms.com">editor@inspiredbuiltforms.com</a></li>
+        <li>By mail: Inspired Built Forms Editorial, 128 Design Quarter, Studio 4B, London, EC1V 9BD, United Kingdom</li>
+      </ul>
+
+      <div class="highlight-box" style="margin-top: 40px;">
+        <strong>Summary for our readers:</strong> We collect only what we need to run the journal, we never sell your data, and you can ask us to delete it at any time. Questions? Just <a href="contact.html">get in touch</a>.
+      </div>
+
+    </section>
+
+    <!-- ==================== FAQ (reused from contact for consistency) ==================== -->
+    <section class="container section" id="faq" style="padding-top: 0;">
+      <div class="section-header">
+        <h2>Privacy Questions</h2>
+        <p class="subhead">Quick answers to common questions about your data and our practices.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">Do you sell my email address? <span>+</span></div>
+          <div class="faq-answer">Absolutely not. We never sell, rent, or trade your personal information. Your email is only used to send you the content you requested and to communicate with you directly.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How can I unsubscribe from the newsletter? <span>+</span></div>
+          <div class="faq-answer">Every newsletter includes a one-click unsubscribe link at the bottom. You can also email us at <a href="mailto:editor@inspiredbuiltforms.com" style="color: var(--accent);">editor@inspiredbuiltforms.com</a> and we'll remove you manually.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What cookies do you use? <span>+</span></div>
+          <div class="faq-answer">We use essential cookies for site functionality and analytics cookies to understand how readers use the journal. You can control cookies in your browser settings. For full details, see our <a href="cookies.html" style="color: var(--accent);">Cookies Policy</a>.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How do I request a copy of my data? <span>+</span></div>
+          <div class="faq-answer">Email <a href="mailto:editor@inspiredbuiltforms.com" style="color: var(--accent);">editor@inspiredbuiltforms.com</a> with the subject line "Data Request". We will respond within one month with a copy of any personal data we hold about you.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Do you comply with GDPR? <span>+</span></div>
+          <div class="faq-answer">Yes. We are committed to complying with the General Data Protection Regulation (GDPR) and UK data protection laws. You have the right to access, rectify, erase, restrict, and port your data, as outlined in section 8 above.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER (mini) ==================== -->
+    <section class="container section" id="newsletter" style="padding-top: 0;">
+      <div class="newsletter-section" style="max-width: 720px; margin: 0 auto; background: var(--paper-warm); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 48px 40px; text-align: center;">
+        <h2 style="font-size: 2rem; margin-bottom: 12px;">Stay in the Loop</h2>
+        <p style="color: var(--muted-text); margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto;">Weekly essays and practical guides. No spam, unsubscribe anytime.</p>
+        <form class="newsletter-form" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;" onsubmit="event.preventDefault(); alert('Thank you for subscribing.');">
+          <input type="email" placeholder="Your email address" required style="padding: 12px 18px; border: 1px solid var(--border-light); border-radius: var(--radius-sm); font-family: 'Inter', sans-serif; font-size: 0.9rem; min-width: 260px; background: var(--paper); outline: none;">
+          <button type="submit" style="padding: 12px 28px; background: var(--ink); color: var(--paper); border: none; border-radius: var(--radius-sm); font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.9rem; cursor: pointer; transition: background 0.2s ease;">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">Inspired <span>Built Forms</span></span>
+          <p>An independent journal of interior design and architecture. Published since 2020.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#spaces">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Inspired Built Forms. All rights reserved.</span>
+        <span>Made with care for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCHEMA MARKUP ==================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy · Inspired Built Forms",
+    "url": "https://inspiredbuiltforms.com/privacy.html",
+    "description": "Privacy Policy for Inspired Built Forms — how we collect, use, and protect your personal information.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Inspired Built Forms",
+      "email": "editor@inspiredbuiltforms.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "editorial",
+        "email": "editor@inspiredbuiltforms.com"
+      }
+    }
+  }
+  </script>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    (function() {
+      // FAQ accordion
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('open');
+        });
+      });
+
+      // Search functionality
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+
+      function performSearch() {
+        const query = searchInput.value.trim().toLowerCase();
+        if (!query) return;
+
+        alert('Search is available on the home page. Redirecting to journal...');
+        window.location.href = 'index.html#journal';
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          performSearch();
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

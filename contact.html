@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Inspired Built Forms | Editorial & Advertising</title>
+
+  <!-- SEO essentials -->
+  <meta name="description" content="Contact Inspired Built Forms — editorial submissions, advertising, and general inquiries. We welcome thoughtful contributions on interior design and architecture.">
+  <meta name="author" content="Inspired Built Forms Editorial">
+  <link rel="canonical" href="https://inspiredbuiltforms.com/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact · Inspired Built Forms | Editorial & Advertising">
+  <meta property="og:description" content="Reach the editorial team at Inspired Built Forms. We welcome pitches, feedback, and partnership inquiries.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://inspiredbuiltforms.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <meta property="og:site_name" content="Inspired Built Forms">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- RESET & BASE (same as home) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #fcfaf7;
+      --paper-warm: #f5f2ee;
+      --border-light: #e0dbd4;
+      --border-subtle: #ece7e0;
+      --accent: #9b7b5e;
+      --accent-muted: #b9a28c;
+      --muted-text: #6b625a;
+      --card-bg: #ffffff;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.04);
+      --radius-sm: 2px;
+      --radius-md: 4px;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease, opacity 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.75rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+
+    /* ---------- UTILITIES ---------- */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container-narrow {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 64px 0;
+    }
+
+    .section-header {
+      margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .section-header .subhead {
+      color: var(--muted-text);
+      font-size: 1rem;
+      font-weight: 300;
+      max-width: 600px;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border-subtle);
+      margin: 32px 0;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border-light);
+      background: var(--paper);
+      padding: 20px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-weight: 400;
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 24px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      padding: 4px 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--paper-warm);
+      border: 1px solid var(--border-light);
+      padding: 6px 14px;
+      border-radius: 40px;
+    }
+
+    .search-wrap input {
+      border: none;
+      background: transparent;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      padding: 4px 0;
+      outline: none;
+      width: 160px;
+      color: var(--ink);
+    }
+
+    .search-wrap input::placeholder {
+      color: var(--muted-text);
+      font-weight: 300;
+    }
+
+    .search-wrap button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--muted-text);
+      font-size: 0.9rem;
+    }
+
+    /* ---------- CONTACT PAGE SPECIFIC ---------- */
+    .contact-hero {
+      padding: 48px 0 24px;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .contact-hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 16px;
+    }
+
+    .contact-hero p {
+      font-size: 1.1rem;
+      color: var(--muted-text);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+      padding: 32px 0 64px;
+    }
+
+    /* Form */
+    .contact-form-wrap {
+      background: var(--card-bg);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 40px 40px 36px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-form-wrap h2 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-form-wrap .form-intro {
+      font-size: 0.9rem;
+      color: var(--muted-text);
+      margin-bottom: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--ink-soft);
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      background: var(--paper);
+      color: var(--ink);
+      transition: border-color 0.15s ease;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent-muted);
+    }
+
+    .form-group textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b625a' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+    }
+
+    .contact-submit {
+      display: inline-block;
+      width: 100%;
+      padding: 14px 28px;
+      background: var(--ink);
+      color: var(--paper);
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      margin-top: 4px;
+    }
+
+    .contact-submit:hover {
+      background: var(--accent);
+    }
+
+    .form-note {
+      font-size: 0.7rem;
+      color: var(--muted-text);
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    /* Contact Info Side */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding-top: 8px;
+    }
+
+    .info-card {
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 28px;
+    }
+
+    .info-card:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .info-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .info-card p {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    .info-card a {
+      color: var(--accent);
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease;
+    }
+
+    .info-card a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .info-icon {
+      display: inline-block;
+      font-size: 1.1rem;
+      margin-right: 8px;
+      color: var(--accent-muted);
+    }
+
+    /* ---------- FAQ (same as home) ---------- */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border-light);
+      padding: 24px 0;
+    }
+
+    .faq-item:first-child {
+      border-top: 1px solid var(--border-light);
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 1.1rem;
+      font-family: 'Playfair Display', serif;
+      gap: 16px;
+    }
+
+    .faq-question span {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--accent);
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-question span {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, margin 0.2s ease;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      padding-right: 32px;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+      margin-top: 16px;
+    }
+
+    /* ---------- FOOTER (same as home) ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #b0a89f;
+      padding: 64px 0 32px;
+      margin-top: 80px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-brand .logo {
+      color: #fff;
+      font-size: 1.4rem;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      max-width: 320px;
+      color: #9a938c;
+    }
+
+    .footer-col h5 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #7d766f;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+      font-size: 0.85rem;
+    }
+
+    .footer-col ul a {
+      color: #b0a89f;
+    }
+
+    .footer-col ul a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-top: 28px;
+      font-size: 0.75rem;
+      color: #6b625a;
+    }
+
+    .footer-bottom a {
+      color: #8a837c;
+    }
+
+    .footer-bottom a:hover {
+      color: #fff;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+      .info-card:last-child {
+        border-bottom: 1px solid var(--border-subtle);
+        padding-bottom: 28px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .main-nav ul {
+        gap: 16px;
+        font-size: 0.8rem;
+      }
+      .search-wrap {
+        width: 100%;
+      }
+      .search-wrap input {
+        width: 100%;
+      }
+      .contact-hero h1 {
+        font-size: 1.9rem;
+      }
+      .contact-form-wrap {
+        padding: 28px 20px;
+      }
+      .contact-info {
+        grid-template-columns: 1fr;
+      }
+      .info-card:last-child {
+        border-bottom: 1px solid var(--border-subtle);
+        padding-bottom: 28px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container, .container-narrow {
+        padding: 0 16px;
+      }
+      .contact-hero h1 {
+        font-size: 1.6rem;
+      }
+      .contact-form-wrap {
+        padding: 24px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Inspired <span>Built Forms</span></a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search articles">
+        <button aria-label="Submit search" id="searchBtn">⌕</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== CONTACT HERO ==================== -->
+    <section class="container contact-hero">
+      <span class="category-tag">Get in Touch</span>
+      <h1>Contact Inspired Built Forms</h1>
+      <p>We welcome thoughtful questions, editorial pitches, and partnership inquiries. Our team reads every message and aims to respond within two business days.</p>
+    </section>
+
+    <!-- ==================== CONTACT GRID ==================== -->
+    <section class="container contact-grid">
+
+      <!-- Form -->
+      <div class="contact-form-wrap">
+        <h2>Send a Message</h2>
+        <p class="form-intro">Fields marked with * are required. We'll never share your details.</p>
+
+        <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you for your message. We will respond within two business days.'); this.reset();">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="e.g. Alex Morgan">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="editorial">Editorial pitch / submission</option>
+              <option value="advertising">Advertising & partnerships</option>
+              <option value="feedback">Feedback on an article</option>
+              <option value="press">Press / media inquiry</option>
+              <option value="general">General question</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Tell us how we can help..."></textarea>
+          </div>
+
+          <button type="submit" class="contact-submit">Send Message →</button>
+          <p class="form-note">By submitting, you agree to our <a href="privacy.html" style="color: var(--accent);">privacy policy</a>.</p>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+
+        <div class="info-card">
+          <h3><span class="info-icon">✉</span> Editorial</h3>
+          <p>Pitches, article ideas, and corrections:<br>
+          <a href="mailto:editor@inspiredbuiltforms.com">editor@inspiredbuiltforms.com</a></p>
+          <p style="font-size: 0.85rem; color: var(--muted-text); margin-top: 8px;">We welcome long-form contributions on interior design, architecture, materials, and spatial theory.</p>
+        </div>
+
+        <div class="info-card">
+          <h3><span class="info-icon">📢</span> Advertising & Partnerships</h3>
+          <p>For sponsored content, display advertising, and collaborations:<br>
+          <a href="mailto:ads@inspiredbuiltforms.com">ads@inspiredbuiltforms.com</a></p>
+        </div>
+
+        <div class="info-card">
+          <h3><span class="info-icon">📍</span> Mailing Address</h3>
+          <p>Inspired Built Forms Editorial<br>
+          128 Design Quarter, Studio 4B<br>
+          London, EC1V 9BD<br>
+          United Kingdom</p>
+        </div>
+
+        <div class="info-card">
+          <h3><span class="info-icon">⏱</span> Response Time</h3>
+          <p>We typically respond within <strong>2 business days</strong>. For urgent press inquiries, please mark your subject line as "URGENT".</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="container section" id="faq" style="padding-top: 0;">
+      <div class="section-header">
+        <h2>Before You Write</h2>
+        <p class="subhead">Quick answers to common questions about contacting us and contributing.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">Do you accept guest articles? <span>+</span></div>
+          <div class="faq-answer">Yes, we welcome guest contributions that align with our editorial focus. Please send a short pitch (200–300 words) outlining your idea, along with a brief bio and writing samples, to <a href="mailto:editor@inspiredbuiltforms.com" style="color: var(--accent);">editor@inspiredbuiltforms.com</a>. We do not accept previously published pieces.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How can I advertise on Inspired Built Forms? <span>+</span></div>
+          <div class="faq-answer">We offer display advertising, newsletter sponsorships, and sponsored long-form content. Please email <a href="mailto:ads@inspiredbuiltforms.com" style="color: var(--accent);">ads@inspiredbuiltforms.com</a> for our media kit and rate card.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I republish an article from your site? <span>+</span></div>
+          <div class="faq-answer">You may quote up to 100 words with a clear link back to the original article. For full republication, please contact us for permission. All content is copyrighted.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Do you have a physical office I can visit? <span>+</span></div>
+          <div class="faq-answer">Our editorial team works remotely, but we maintain a mailing address in London (listed above). We are not open to drop-in visits, but we're happy to arrange a call.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How do I unsubscribe from the newsletter? <span>+</span></div>
+          <div class="faq-answer">Every newsletter includes a one-click unsubscribe link at the bottom. You can also email us at <a href="mailto:editor@inspiredbuiltforms.com" style="color: var(--accent);">editor@inspiredbuiltforms.com</a> and we'll remove you manually.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER (mini) ==================== -->
+    <section class="container section" id="newsletter" style="padding-top: 0;">
+      <div class="newsletter-section" style="max-width: 720px; margin: 0 auto; background: var(--paper-warm); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 48px 40px; text-align: center;">
+        <h2 style="font-size: 2rem; margin-bottom: 12px;">Stay in the Loop</h2>
+        <p style="color: var(--muted-text); margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto;">Weekly essays and practical guides. No spam, unsubscribe anytime.</p>
+        <form class="newsletter-form" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;" onsubmit="event.preventDefault(); alert('Thank you for subscribing.');">
+          <input type="email" placeholder="Your email address" required style="padding: 12px 18px; border: 1px solid var(--border-light); border-radius: var(--radius-sm); font-family: 'Inter', sans-serif; font-size: 0.9rem; min-width: 260px; background: var(--paper); outline: none;">
+          <button type="submit" style="padding: 12px 28px; background: var(--ink); color: var(--paper); border: none; border-radius: var(--radius-sm); font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.9rem; cursor: pointer; transition: background 0.2s ease;">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">Inspired <span>Built Forms</span></span>
+          <p>An independent journal of interior design and architecture. Published since 2020.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#spaces">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Inspired Built Forms. All rights reserved.</span>
+        <span>Made with care for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCHEMA MARKUP ==================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Inspired Built Forms",
+    "url": "https://inspiredbuiltforms.com/contact.html",
+    "description": "Contact the editorial team at Inspired Built Forms for pitches, advertising, and general inquiries.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Inspired Built Forms",
+      "email": "editor@inspiredbuiltforms.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "editorial",
+        "email": "editor@inspiredbuiltforms.com"
+      }
+    }
+  }
+  </script>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    (function() {
+      // FAQ accordion
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('open');
+        });
+      });
+
+      // Search functionality (simple, same as home)
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+
+      function performSearch() {
+        const query = searchInput.value.trim().toLowerCase();
+        if (!query) return;
+
+        // On the contact page, we can just alert or redirect to home
+        alert('Search is available on the home page. Redirecting to journal...');
+        window.location.href = 'index.html#journal';
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          performSearch();
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

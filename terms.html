@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Inspired Built Forms — Interior Design & Architecture Journal</title>
+
+  <!-- SEO essentials -->
+  <meta name="description" content="About Inspired Built Forms: an independent editorial publication exploring interior design, architecture, materials, and the art of living well. Our mission, editorial team, and policies.">
+  <meta name="author" content="Inspired Built Forms Editorial">
+  <link rel="canonical" href="https://inspiredbuiltforms.com/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About | Inspired Built Forms — Interior Design & Architecture Journal">
+  <meta property="og:description" content="An independent journal of interior design, architecture, and the poetics of built space. Meet our editors and read our editorial mission.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://inspiredbuiltforms.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <meta property="og:site_name" content="Inspired Built Forms">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #fcfaf7;
+      --paper-warm: #f5f2ee;
+      --border-light: #e0dbd4;
+      --border-subtle: #ece7e0;
+      --accent: #9b7b5e;
+      --accent-muted: #b9a28c;
+      --muted-text: #6b625a;
+      --card-bg: #ffffff;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.04);
+      --radius-sm: 2px;
+      --radius-md: 4px;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease, opacity 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.75rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+
+    /* ---------- UTILITIES ---------- */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container-narrow {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 64px 0;
+    }
+
+    .section-header {
+      margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .section-header .subhead {
+      color: var(--muted-text);
+      font-size: 1rem;
+      font-weight: 300;
+      max-width: 600px;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .reading-time {
+      font-size: 0.75rem;
+      color: var(--muted-text);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .reading-time::before {
+      content: "—";
+      font-weight: 300;
+      opacity: 0.6;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border-subtle);
+      margin: 32px 0;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border-light);
+      background: var(--paper);
+      padding: 20px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-weight: 400;
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 24px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      padding: 4px 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--paper-warm);
+      border: 1px solid var(--border-light);
+      padding: 6px 14px;
+      border-radius: 40px;
+    }
+
+    .search-wrap input {
+      border: none;
+      background: transparent;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      padding: 4px 0;
+      outline: none;
+      width: 160px;
+      color: var(--ink);
+    }
+
+    .search-wrap input::placeholder {
+      color: var(--muted-text);
+      font-weight: 300;
+    }
+
+    .search-wrap button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--muted-text);
+      font-size: 0.9rem;
+    }
+
+    /* ---------- ABOUT PAGE SPECIFIC ---------- */
+    .about-hero {
+      padding: 64px 0 32px;
+      text-align: center;
+    }
+
+    .about-hero h1 {
+      font-size: 3.2rem;
+      margin-bottom: 16px;
+    }
+
+    .about-hero .lead {
+      font-size: 1.2rem;
+      color: var(--muted-text);
+      max-width: 720px;
+      margin: 0 auto;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      margin: 32px 0 48px;
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+      margin-bottom: 20px;
+      line-height: 1.75;
+    }
+
+    .about-text h2 {
+      font-size: 1.8rem;
+      margin: 32px 0 16px;
+      font-weight: 500;
+    }
+
+    .about-text h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .about-text blockquote {
+      border-left: 3px solid var(--accent-muted);
+      padding-left: 24px;
+      margin: 28px 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .about-image {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--border-subtle);
+      position: sticky;
+      top: 32px;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+    }
+
+    .about-image .caption {
+      font-size: 0.75rem;
+      color: var(--muted-text);
+      padding: 12px 16px 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-subtle);
+      border-top: none;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 16px;
+    }
+
+    .team-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      text-align: center;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .team-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .team-card .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--paper-warm);
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--accent);
+      border: 1px solid var(--border-light);
+    }
+
+    .team-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 4px;
+    }
+
+    .team-card .role {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .team-card p {
+      font-size: 0.85rem;
+      color: var(--muted-text);
+      line-height: 1.5;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 16px;
+    }
+
+    .value-item {
+      background: var(--paper-warm);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+    }
+
+    .value-item .icon {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+
+    .value-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .value-item p {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    .policy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      margin-top: 16px;
+    }
+
+    .policy-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .policy-item p {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    /* ---------- EDITORIAL FOOTER ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #b0a89f;
+      padding: 64px 0 32px;
+      margin-top: 80px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-brand .logo {
+      color: #fff;
+      font-size: 1.4rem;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      max-width: 320px;
+      color: #9a938c;
+    }
+
+    .footer-col h5 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #7d766f;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+      font-size: 0.85rem;
+    }
+
+    .footer-col ul a {
+      color: #b0a89f;
+    }
+
+    .footer-col ul a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-top: 28px;
+      font-size: 0.75rem;
+      color: #6b625a;
+    }
+
+    .footer-bottom a {
+      color: #8a837c;
+    }
+
+    .footer-bottom a:hover {
+      color: #fff;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .about-image {
+        position: static;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .about-hero h1 {
+        font-size: 2.2rem;
+      }
+      .about-hero .lead {
+        font-size: 1rem;
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .main-nav ul {
+        gap: 16px;
+        font-size: 0.8rem;
+      }
+      .search-wrap {
+        width: 100%;
+      }
+      .search-wrap input {
+        width: 100%;
+      }
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container, .container-narrow {
+        padding: 0 16px;
+      }
+      .about-hero h1 {
+        font-size: 1.8rem;
+      }
+      .team-card {
+        padding: 20px;
+      }
+    }
+
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Inspired <span>Built Forms</span></a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search articles">
+        <button aria-label="Submit search" id="searchBtn">⌕</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== ABOUT HERO ==================== -->
+    <section class="container about-hero">
+      <span class="category-tag" style="font-size: 0.75rem;">Independent Editorial</span>
+      <h1>About Inspired Built Forms</h1>
+      <p class="lead">An independent journal of interior design, architecture, and the poetics of built space. We publish long-form essays, practical guides, and critical perspectives on the art of living well.</p>
+    </section>
+
+    <!-- ==================== ABOUT GRID (TEXT + IMAGE) ==================== -->
+    <section class="container about-grid">
+      <div class="about-text">
+        <h2>Our Mission</h2>
+        <p>Inspired Built Forms was founded in 2020 with a simple conviction: that writing about the built environment should be as considered as the spaces we inhabit. We believe architecture and interior design are not luxuries or afterthoughts—they are the backdrop of daily life, shaping how we feel, move, rest, and connect.</p>
+        <p>Too much design writing is either shallow trend coverage or impenetrable academic jargon. We aim for the middle ground: rigorous, accessible, and beautifully written. Every article is researched, edited, and crafted with care. We do not publish sponsored content disguised as editorial. We do not chase clicks. We take our time.</p>
+
+        <blockquote>“The built environment is not a backdrop. It is a protagonist in the story of how we live.”</blockquote>
+
+        <h2>What We Cover</h2>
+        <p>Our editorial scope spans interior design, architecture, materials, lighting, space planning, and the intersection of built space with culture, climate, and well-being. We profile emerging practitioners alongside established voices. We explore historical precedents and contemporary innovations. We ask not just <em>what</em> a space looks like, but <em>why</em> it feels the way it does.</p>
+        <p>Whether we are dissecting the science of circadian lighting or tracing the resurgence of lime plaster, our goal is to deepen your understanding of the spaces you inhabit—and to give you practical ideas you can apply, whether you are designing a home, commissioning a building, or simply noticing the world around you more closely.</p>
+
+        <h2>Editorial Independence</h2>
+        <p>Inspired Built Forms is entirely independent. We do not accept payment for editorial coverage, and we do not allow advertisers to influence our content. Our revenue comes from reader support, carefully selected display advertising, and occasional affiliate partnerships that are clearly disclosed. This model allows us to prioritise our readers and maintain editorial integrity.</p>
+        <p>We are committed to accuracy, transparency, and intellectual honesty. If we make a mistake, we correct it promptly and visibly. If we express an opinion, we label it as such. Our only loyalty is to our readers and to the standards of good design writing.</p>
+      </div>
+
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=1000&fit=crop" alt="Editorial workspace with architectural drawings, material samples, and natural light">
+        <div class="caption">Our editorial workspace—where essays, guides, and critical perspectives take shape.</div>
+      </div>
+    </section>
+
+    <!-- ==================== TEAM ==================== -->
+    <section class="container section" style="padding-top: 32px;">
+      <div class="section-header">
+        <h2>Our Editorial Team</h2>
+        <p class="subhead">A small, dedicated team of writers, critics, and former practitioners.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="avatar">E</div>
+          <h3>Elena Marchetti</h3>
+          <div class="role">Founding Editor</div>
+          <p>Architecture critic and former practising interior architect. Elena has written for international design publications and teaches spatial theory.</p>
+        </div>
+        <div class="team-card">
+          <div class="avatar">C</div>
+          <h3>Clara Nguyen</h3>
+          <div class="role">Senior Editor, Interiors</div>
+          <p>Clara specialises in residential interiors, colour theory, and compact living. She is the author of our popular "Small Space, Grand Living" series.</p>
+        </div>
+        <div class="team-card">
+          <div class="avatar">D</div>
+          <h3>David Okonkwo</h3>
+          <div class="role">Contributing Editor, Architecture</div>
+          <p>David is a practising architect and writer focused on climate-responsive design, urbanism, and the social life of buildings.</p>
+        </div>
+        <div class="team-card">
+          <div class="avatar">I</div>
+          <h3>Isabelle Fournier</h3>
+          <div class="role">Materials Correspondent</div>
+          <p>Isabelle writes about sustainable materials, craft, and the lifecycle of building products. She trained as a conservation architect.</p>
+        </div>
+        <div class="team-card">
+          <div class="avatar">M</div>
+          <h3>Marcus Feld</h3>
+          <div class="role">Space Planning Editor</div>
+          <p>Marcus is an interior designer and educator. His writing translates ergonomic and spatial theory into practical, actionable guidance.</p>
+        </div>
+        <div class="team-card">
+          <div class="avatar">+</div>
+          <h3>Our Contributors</h3>
+          <div class="role">Writers & Researchers</div>
+          <p>We work with a small network of freelance writers, photographers, and researchers who share our commitment to rigour and clarity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VALUES / EDITORIAL PRINCIPLES ==================== -->
+    <section class="container section" style="padding-top: 32px;">
+      <div class="section-header">
+        <h2>Our Editorial Principles</h2>
+        <p class="subhead">The standards that guide everything we publish.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="icon">I.</div>
+          <h3>Depth Over Speed</h3>
+          <p>We publish less frequently than many outlets. Every article is researched, drafted, edited, and fact-checked. We would rather publish one excellent piece than ten rushed ones.</p>
+        </div>
+        <div class="value-item">
+          <div class="icon">II.</div>
+          <h3>Clarity Over Jargon</h3>
+          <p>Good design writing should be accessible without being simplistic. We avoid unnecessary jargon and explain complex ideas in plain language—without sacrificing nuance.</p>
+        </div>
+        <div class="value-item">
+          <div class="icon">III.</div>
+          <h3>Independence Over Influence</h3>
+          <p>Our editorial content is never for sale. We disclose all partnerships and affiliate relationships. Advertisers have no input into what we cover or how we cover it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== POLICIES ==================== -->
+    <section class="container section" style="padding-top: 32px;">
+      <div class="section-header">
+        <h2>Policies & Transparency</h2>
+      </div>
+      <div class="policy-grid">
+        <div class="policy-item">
+          <h3>Privacy</h3>
+          <p>We do not sell or share your personal data. Newsletter emails are stored securely and used only for editorial updates. You can unsubscribe at any time. <a href="privacy.html" style="color: var(--accent);">Read full policy</a>.</p>
+        </div>
+        <div class="policy-item">
+          <h3>Terms of Use</h3>
+          <p>By using this site you agree to our terms. All content is protected by copyright. You may share excerpts with attribution. <a href="terms.html" style="color: var(--accent);">Read full terms</a>.</p>
+        </div>
+        <div class="policy-item">
+          <h3>Cookies</h3>
+          <p>We use minimal cookies for analytics and site functionality. You can opt out of analytics cookies without affecting your experience. <a href="cookies.html" style="color: var(--accent);">Read cookie policy</a>.</p>
+        </div>
+        <div class="policy-item">
+          <h3>Disclaimer</h3>
+          <p>Our content is for informational purposes only and does not constitute professional design or architectural advice. Always consult a qualified professional. <a href="disclaimer.html" style="color: var(--accent);">Read full disclaimer</a>.</p>
+        </div>
+        <div class="policy-item">
+          <h3>Corrections</h3>
+          <p>We are committed to accuracy. If you spot an error, please <a href="contact.html" style="color: var(--accent);">contact us</a>. Corrections are made promptly and noted at the bottom of the article.</p>
+        </div>
+        <div class="policy-item">
+          <h3>Contact</h3>
+          <p>Editorial: <a href="mailto:editor@inspiredbuiltforms.com" style="color: var(--accent);">editor@inspiredbuiltforms.com</a><br>Advertising: <a href="mailto:ads@inspiredbuiltforms.com" style="color: var(--accent);">ads@inspiredbuiltforms.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section class="container section" style="padding-top: 0;">
+      <div class="newsletter-section" style="background: var(--paper-warm); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 48px 40px; text-align: center; max-width: 720px; margin: 0 auto;">
+        <h2 style="font-size: 2rem; margin-bottom: 12px;">Stay in Touch</h2>
+        <p style="color: var(--muted-text); margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto;">Receive our weekly digest of long-form articles, design guides, and critical essays.</p>
+        <form class="newsletter-form" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;" onsubmit="event.preventDefault(); alert('Thank you for subscribing. Check your inbox for a confirmation.');">
+          <input type="email" placeholder="Your email address" required style="padding: 12px 18px; border: 1px solid var(--border-light); border-radius: var(--radius-sm); font-family: 'Inter', sans-serif; font-size: 0.9rem; min-width: 260px; background: var(--paper); outline: none;">
+          <button type="submit" style="padding: 12px 28px; background: var(--ink); color: var(--paper); border: none; border-radius: var(--radius-sm); font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.9rem; cursor: pointer; transition: background 0.2s ease;">Subscribe</button>
+        </form>
+        <p style="font-size: 0.7rem; margin-top: 16px; color: var(--muted-text);">We respect your privacy. Unsubscribe anytime.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">Inspired <span>Built Forms</span></span>
+          <p>An independent journal of interior design and architecture. Published since 2020.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#spaces">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Inspired Built Forms. All rights reserved.</span>
+        <span>Made with care for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCHEMA MARKUP ==================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Inspired Built Forms",
+    "url": "https://inspiredbuiltforms.com/about.html",
+    "description": "About Inspired Built Forms: an independent editorial publication exploring interior design, architecture, materials, and space planning.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Inspired Built Forms",
+      "url": "https://inspiredbuiltforms.com",
+      "foundingDate": "2020",
+      "founder": {
+        "@type": "Person",
+        "name": "Elena Marchetti"
+      }
+    }
+  }
+  </script>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    (function() {
+      // Search functionality — simple redirect to home with query
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+
+      function performSearch() {
+        const query = searchInput.value.trim();
+        if (query) {
+          // Redirect to home page with search query
+          window.location.href = 'index.html?search=' + encodeURIComponent(query);
+        }
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          performSearch();
+        }
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
